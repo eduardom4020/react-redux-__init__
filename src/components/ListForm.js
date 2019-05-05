@@ -17,7 +17,12 @@ class ListForm extends Component {
     );
 
     sendText = event => {
-        console.log('Sending Value to List! ', this.state.text);
+        // console.log('Sending Value to List! ', this.state.text);
+        const { text } = this.state;
+        const { addToList } = this.props;
+
+        addToList(text);
+
         this.setState({
             text: ''
         })
