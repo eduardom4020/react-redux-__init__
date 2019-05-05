@@ -1,9 +1,15 @@
 import React from 'react';
 import './App.css';
 
+import Display from './components/Display';
+import ListForm from './components/ListForm';
+
 const App = () => (
     <div className='App'>
-        <span>A React Redux Class!</span>
+        <Display 
+            list={['A', 'React', 'Redux', 'Class']}
+        />
+        <ListForm />
     </div>
 );
 
